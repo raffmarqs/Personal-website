@@ -1,0 +1,379 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    // font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font-family:
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+    background:#f7f7f7;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.logo{
+    margin-bottom: 30px;
+    opacity:0;
+    animation: fade 1s 2.5s forwards;
+}
+
+h1{
+    display: none;
+    visibility: hidden;
+}
+
+p{
+    font-size:2em;
+    line-size: 2.8em;
+    margin-top:0;
+    margin-bottom:50px;
+    opacity: 0;
+    max-width: 850px;
+}
+
+.main-container {
+    height:100%;
+    width:100%;
+    display:table;
+}
+.valigned-container{
+    vertical-align:middle;
+    height:100%;
+    display:table-cell;
+}
+
+.p1{animation: slide-left 1.2s 0.5s ease forwards; }
+.p2{animation: slide-left 1.2s 0.8s ease forwards; }
+.p3{animation: slide-left 1.2s 1s ease forwards; }
+
+a{
+    color:#ff5555;
+    padding-bottom: 0;
+    text-decoration: none;
+    border-bottom: none;
+    line-height:20px;
+}
+
+a:hover{
+    // border-bottom: 3px solid #ff5555;
+    // padding-bottom:-1px;
+    color:#dbc500;
+    cursor:pointer;
+    transition: color 0.4s ease;
+}
+
+article{
+    background: url('../img/name-big.png') left top no-repeat;
+    background-size: contain;
+    animation: fade 0.8s ease-in forwards;
+}
+
+
+.rm-name{
+    z-index: -9;
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+.links_social{
+    opacity: 0;
+    margin: 0 auto;
+    text-align: center;
+    animation: fade 0.6s 1.5s forwards;
+    margin-left:0;
+    padding-left:0;
+}
+
+.links_social li{
+    display:inline-block;
+}
+
+.links_social li:after{
+    content: "\00b7";
+    display:inline-block;
+    padding:0 10px;
+}
+
+.links_social li:last-child:after{
+    display: none;
+}
+
+
+// Animations
+@keyframes slide-left{
+    from {
+        opacity:0;
+        margin-left:-25px;
+    }
+
+    to{
+        opacity:1;
+        margin-left:0;
+    }
+}
+
+@keyframes fade{
+    from {
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes slide-left{
+    from {
+        opacity:0;
+        margin-left:-50px;
+    }
+
+    to{
+        opacity:1;
+        margin-left:0;
+    }
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 850px; /* 1140px - 10% for margins */
+        padding:15px;
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
